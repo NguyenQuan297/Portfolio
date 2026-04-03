@@ -5,7 +5,7 @@
 
 ## Live Demo
 
-_(Add your deployed link here, e.g. Vercel/Netlify/GitHub Pages)_
+[Quan Nguyen Portfolio – Live](https://portfolio-murex-omega-38.vercel.app/)
 
 ## Tech Stack
 
