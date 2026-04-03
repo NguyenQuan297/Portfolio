@@ -23,5 +23,5 @@ npm run dev
 
 The app is configured to use:
 - `public/Portfolio_image.jpg` as the HERO background
-- `public/hero-avatar-transparent.png` as the HERO avatar
+- `public/hero-avatar.png` as the HERO avatar
 
