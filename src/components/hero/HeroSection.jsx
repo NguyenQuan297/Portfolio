@@ -146,7 +146,7 @@ export default function HeroSection() {
         {/* Right column */}
         <div className="flex justify-end">
           <motion.img
-            src="/hero-avatar-transparent.png"
+            src="/hero-avatar.png"
             alt="Hero avatar"
             initial={{ opacity: 0, y: 18, scale: 0.98 }}
             animate={{ opacity: 1, y: 0, scale: 1 }}
