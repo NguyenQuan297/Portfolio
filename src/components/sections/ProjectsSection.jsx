@@ -7,10 +7,10 @@ export default function ProjectsSection() {
       title: "Real-Time Lead Management System",
       subtitle: "Full-Stack CRM Platform",
       bulletPoints: [
-        "Built scalable backend using FastAPI, PostgreSQL, and Redis",
-        "Designed data pipeline to process Excel uploads and detect inactive leads (>16h SLA)",
-        "Implemented real-time notifications via WebSocket and email alerts",
-        "Deployed on AWS (EC2, S3) using Docker",
+        "Built a scalable backend with FastAPI, PostgreSQL, and Redis using async services + repositories",
+        "Implemented an Excel ingestion pipeline that normalizes data and enqueues rows into a Redis queue for background processing",
+        "Developed a lead worker that merges ingested rows into PostgreSQL and captures ingest errors for reliability (DLQ)",
+        "Added SLA monitoring to flag overdue leads and send alerts via Telegram + email, enabling near real-time sales operations visibility",
       ],
       impact:
         "Reduced manual tracking effort and enabled real-time monitoring of sales operations",
