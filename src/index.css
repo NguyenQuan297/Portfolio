@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  @apply text-white scroll-smooth;
+  background: linear-gradient(to bottom, #0a0a0a, #111827);
+}
+
+body {
+  @apply font-sans;
+}
+
+/* Scroll snapping */
+main {
+  scroll-snap-type: y mandatory;
+}
+
+section {
+  scroll-snap-align: start;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #020617;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, #4f46e5, #22d3ee);
+  border-radius: 999px;
+}
+
+/* Custom cursor */
+/* Disabled: we rely on the native cursor to avoid lag. */
