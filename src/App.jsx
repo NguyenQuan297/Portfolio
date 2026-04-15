@@ -11,7 +11,6 @@ import HeroSection from "./components/hero/HeroSection";
 import AboutSection from "./components/sections/AboutSection";
 import SkillsSection from "./components/sections/SkillsSection";
 import ProjectsSection from "./components/sections/ProjectsSection";
-import SystemDesignSection from "./components/sections/SystemDesignSection";
 import EducationSection from "./components/sections/EducationSection";
 import ContactSection from "./components/sections/ContactSection";
 
@@ -40,7 +39,6 @@ export default function App() {
         <AboutSection />
         <SkillsSection />
         <ProjectsSection />
-        <SystemDesignSection />
         <EducationSection />
         <ContactSection />
       </main>
