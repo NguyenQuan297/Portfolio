@@ -5,11 +5,11 @@ export default function SkillsSection() {
   const groups = [
     {
       label: "Core Stack",
-      items: ["Python", "Kafka", "Spark", "AWS", "PostgreSQL"],
+      items: ["Python", "PySpark", "AWS", "PostgreSQL"],
     },
     {
       label: "Backend & Web",
-      items: ["Node.js", "FastAPI", "Flask", "React.js"],
+      items: ["FastAPI", "Node.js", "React", "Flask"],
     },
     {
       label: "Data Engineering",
@@ -21,11 +21,7 @@ export default function SkillsSection() {
     },
     {
       label: "Databases",
-      items: ["PostgreSQL", "MySQL", "MongoDB"],
-    },
-    {
-      label: "Additional Exposure",
-      items: ["TensorFlow", "Machine Learning", "NLP (BERT)"],
+      items: ["PostgreSQL", "MySQL"],
     },
   ];
 

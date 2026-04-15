@@ -4,28 +4,33 @@ import ProjectCard from "../projects/ProjectCard";
 export default function ProjectsSection() {
   const projects = [
     {
-      title: "Real-Time Lead Management System",
-      subtitle: "Full-Stack CRM Platform",
+      title: "FPT NEXUS",
+      subtitle: "REAL-TIME LEAD OPERATIONS SYSTEM",
+      repoUrl: "https://github.com/NguyenQuan297/FPT-Nexus",
       bulletPoints: [
-        "Built a scalable backend with FastAPI, PostgreSQL, and Redis using async services + repositories",
-        "Implemented an Excel ingestion pipeline that normalizes data and enqueues rows into a Redis queue for background processing",
-        "Developed a lead worker that merges ingested rows into PostgreSQL and captures ingest errors for reliability (DLQ)",
-        "Added SLA monitoring to flag overdue leads and send alerts via Telegram + email, enabling near real-time sales operations visibility",
+        "Built a full-stack CRM system using FastAPI, PostgreSQL, and Redis to manage and track student leads in real time",
+        "Designed an Excel ingestion pipeline that normalizes data and processes 800+ leads per upload",
+        "Implemented SLA tracking (16-hour threshold) with background jobs and alerting (Telegram + email)",
+        "Developed real-time synchronization between admin and sales using WebSocket",
+        "Deployed the system on AWS EC2 with Docker, supporting internal sales operations",
       ],
       impact:
-        "Reduced manual tracking effort and enabled real-time monitoring of sales operations",
+        "Reduced manual tracking effort and enabled real-time visibility into sales operations",
     },
     {
-      title: "End-to-End Data Pipeline",
-      subtitle: "for Sales Analytics",
+      title: "AIS PIPELINE",
+      subtitle: "LARGE-SCALE MARITIME DATA PIPELINE",
+      repoUrl: "https://github.com/NguyenQuan297/AIS-Based-Maritime-Logistics-Analytics-Pipeline",
       bulletPoints: [
-        "Built ETL pipeline using PySpark and Apache Airflow",
-        "Stored raw data in AWS S3 (data lake architecture)",
-        "Transformed and loaded data into PostgreSQL",
-        "Queried datasets using AWS Athena",
+        "Built an end-to-end data pipeline processing ~8.7M AIS records per day using PySpark",
+        "Implemented streaming decompression and schema enforcement for large maritime datasets (.csv.zst)",
+        "Designed a medallion architecture (Bronze/Silver/Gold) for scalable data transformation",
+        "Generated analytical datasets including vessel activity, voyage segmentation, and route metrics",
+        "Automated workflows using Apache Airflow and stored partitioned data in AWS S3 (Parquet)",
+        "Enabled analytics using AWS Athena and PostgreSQL",
       ],
       impact:
-        "Improved data processing efficiency and enabled scalable analytics workflows",
+        "Delivered a scalable data platform for analyzing real-world vessel traffic and movement patterns",
     },
     {
       title: "Real-Time Event Streaming System",
@@ -37,28 +42,6 @@ export default function ProjectsSection() {
       ],
       impact:
         "Enabled real-time monitoring and faster response to system events",
-    },
-    {
-      title: "Recommendation System",
-      subtitle: "Product Recommendation System",
-      bulletPoints: [
-        "Built backend with Node.js and MongoDB",
-        "Deployed service on AWS EC2",
-        "Integrated recommendation logic into user workflow",
-      ],
-      impact:
-        "Improved user engagement through personalized recommendations",
-    },
-    {
-      title: "NLP Semantic Similarity System",
-      subtitle: "BERT Embeddings",
-      bulletPoints: [
-        "Built an NLP system using BERT embeddings for document similarity",
-        "Stored documents on AWS S3",
-        "Compared semantic similarity beyond traditional TF-IDF (improved matching accuracy)",
-      ],
-      impact:
-        "Enhanced plagiarism detection and semantic understanding capabilities",
     },
   ];
 

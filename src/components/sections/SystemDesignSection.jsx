@@ -9,7 +9,7 @@ export default function SystemDesignSection() {
     >
       <div className="grid gap-10 text-sm md:grid-cols-2 md:items-start md:text-base">
         <div className="space-y-4 text-gray-200">
-          <p>I approach problems from a system perspective:</p>
+          <p>I design systems with a focus on scalability, real-time processing, and data flow efficiency.</p>
           <ul className="space-y-3">
             <li className="flex gap-3">
               <span className="mt-1 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-cyan-400" />

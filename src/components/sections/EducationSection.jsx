@@ -22,6 +22,7 @@ export default function EducationSection() {
           <p className="text-sm text-gray-200">
             <span className="font-semibold text-white">GPA:</span> 3.51 / 4.0
           </p>
+          <p className="mt-2 text-sm text-gray-200">Focused on Data Engineering and Backend Systems</p>
           <ul className="mt-3 space-y-2 text-sm text-gray-200">
             <li className="flex gap-2">
               <span className="mt-1 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-cyan-400" />

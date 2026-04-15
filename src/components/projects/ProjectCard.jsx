@@ -5,6 +5,8 @@ export default function ProjectCard({
   subtitle,
   bulletPoints,
   impact,
+  repoUrl,
+  liveUrl,
   index = 0,
   featured = false,
 }) {
@@ -52,9 +54,32 @@ export default function ProjectCard({
         </p>
 
         <div className="mt-4 flex gap-2">
-          <button className="rounded-full border border-cyan-400/30 px-3 py-1 text-[11px] uppercase tracking-[0.2em] text-cyan-200 transition group-hover:bg-cyan-500/10">
-            Live / GitHub
-          </button>
+          {liveUrl ? (
+            <a
+              href={liveUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="rounded-full border border-cyan-400/30 px-3 py-1 text-[11px] uppercase tracking-[0.2em] text-cyan-200 transition hover:bg-cyan-500/10"
+            >
+              Live
+            </a>
+          ) : null}
+
+          {repoUrl ? (
+            <a
+              href={repoUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="rounded-full border border-cyan-400/30 px-3 py-1 text-[11px] uppercase tracking-[0.2em] text-cyan-200 transition hover:bg-cyan-500/10"
+            >
+              GitHub
+            </a>
+          ) : null}
+          {!liveUrl && !repoUrl ? (
+            <button className="rounded-full border border-cyan-400/30 px-3 py-1 text-[11px] uppercase tracking-[0.2em] text-cyan-200 opacity-50 cursor-not-allowed">
+              Live / GitHub
+            </button>
+          ) : null}
         </div>
       </div>
     </motion.div>
