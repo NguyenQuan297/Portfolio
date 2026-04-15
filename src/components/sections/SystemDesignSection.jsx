@@ -13,19 +13,19 @@ export default function SystemDesignSection() {
           <ul className="space-y-3">
             <li className="flex gap-3">
               <span className="mt-1 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-cyan-400" />
-              <span>Designing scalable data pipelines (batch vs streaming)</span>
+              <span>Data pipelines (batch vs streaming)</span>
             </li>
             <li className="flex gap-3">
               <span className="mt-1 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-cyan-400" />
-              <span>Handling real-time constraints and SLA-based systems</span>
+              <span>Real-time constraints &amp; SLA monitoring</span>
             </li>
             <li className="flex gap-3">
               <span className="mt-1 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-cyan-400" />
-              <span>Optimizing performance with caching (Redis) and efficient querying</span>
+              <span>Performance optimization with caching (Redis)</span>
             </li>
             <li className="flex gap-3">
               <span className="mt-1 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-cyan-400" />
-              <span>Deploying distributed systems on cloud infrastructure (AWS)</span>
+              <span>Cloud-based distributed systems (AWS)</span>
             </li>
           </ul>
 

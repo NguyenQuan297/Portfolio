@@ -32,17 +32,6 @@ export default function ProjectsSection() {
       impact:
         "Delivered a scalable data platform for analyzing real-world vessel traffic and movement patterns",
     },
-    {
-      title: "Real-Time Event Streaming System",
-      subtitle: "Distributed Streaming",
-      bulletPoints: [
-        "Processed streaming data using Kafka and Spark Streaming",
-        "Deployed pipeline on AWS EC2",
-        "Implemented anomaly detection and alerting system",
-      ],
-      impact:
-        "Enabled real-time monitoring and faster response to system events",
-    },
   ];
 
   return (
