@@ -1,6 +1,7 @@
 export default function FooterBranding() {
   return (
     <footer className="relative border-t border-white/5 bg-black/90 py-6 text-center text-xs text-gray-400">
+      <div className="pointer-events-none absolute inset-x-0 -top-px h-px bg-gradient-to-r from-transparent via-cyan-400/40 to-transparent" />
       <p>
         Designed & built by{" "}
         <span className="bg-gradient-to-r from-cyan-300 via-indigo-300 to-emerald-300 bg-clip-text font-medium text-transparent">
@@ -11,4 +12,3 @@ export default function FooterBranding() {
     </footer>
   );
 }
-

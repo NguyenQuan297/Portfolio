@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import ParticleBackground from "../background/ParticleBackground";
 import MagneticButton from "../ui/MagneticButton";
+import HeroAvatar from "./HeroAvatar";
 
 export default function HeroSection() {
   const { scrollY } = useScroll();
@@ -99,23 +100,7 @@ export default function HeroSection() {
           </motion.div>
 
           <motion.div
-            className="mt-auto mb-6 flex w-full flex-wrap justify-start gap-2"
-            initial={{ opacity: 0, y: 16 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.3 }}
-          >
-            {["Kafka", "Spark", "AWS", "Distributed Systems"].map((chip) => (
-              <span
-                key={chip}
-                className="rounded-full border border-cyan-400/30 bg-white/5 px-4 py-1 text-xs font-medium text-cyan-300 transition hover:border-cyan-200 hover:shadow-[0_0_20px_rgba(34,211,238,0.22)]"
-              >
-                {chip}
-              </span>
-            ))}
-          </motion.div>
-
-          <motion.div
-            className="flex w-full flex-wrap items-center justify-start gap-3"
+            className="mt-6 flex w-full flex-wrap items-center justify-start gap-4"
             initial={{ opacity: 0, y: 18 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.42 }}
@@ -145,15 +130,7 @@ export default function HeroSection() {
 
         {/* Right column */}
         <div className="flex justify-end">
-          <motion.img
-            src="/hero-avatar.png"
-            alt="Hero avatar"
-            initial={{ opacity: 0, y: 18, scale: 0.98 }}
-            animate={{ opacity: 1, y: 0, scale: 1 }}
-            transition={{ delay: 0.2, type: "spring", stiffness: 200 }}
-            className="w-[380px] max-w-full select-none object-contain filter drop-shadow-[0_28px_35px_rgba(0,0,0,0.55)]"
-            style={{ filter: "saturate(1.05) contrast(1.05)" }}
-          />
+          <HeroAvatar />
         </div>
       </div>
 

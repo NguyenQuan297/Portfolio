@@ -19,11 +19,11 @@ export default function MagneticButton({
   };
 
   const baseClasses =
-    "relative overflow-hidden rounded-full px-6 py-2 text-xs font-semibold uppercase tracking-[0.2em] transition shadow-lg backdrop-blur";
+    "group/btn relative overflow-hidden rounded-full px-7 py-2.5 text-xs font-semibold uppercase tracking-[0.2em] transition shadow-lg backdrop-blur";
   const primaryClasses =
-    "bg-white text-black shadow-cyan-500/50 hover:bg-cyan-100";
+    "bg-white text-black shadow-cyan-500/40 hover:shadow-[0_0_30px_rgba(34,211,238,0.5)]";
   const outlineClasses =
-    "border border-white/30 text-white bg-transparent hover:bg-white/10";
+    "border border-white/30 text-white bg-white/5 hover:bg-white/10 hover:border-cyan-200/60 hover:shadow-[0_0_25px_rgba(34,211,238,0.25)]";
 
   return (
     <motion.button
@@ -45,8 +45,12 @@ export default function MagneticButton({
       transition={{ type: "spring", stiffness: 300, damping: 20 }}
     >
       <span className="relative z-10">{children}</span>
+
+      {/* shimmer sweep on hover */}
+      <span className="pointer-events-none absolute inset-y-0 -left-1/2 z-0 w-1/2 -skew-x-12 bg-gradient-to-r from-transparent via-white/60 to-transparent opacity-0 transition-all duration-700 group-hover/btn:left-[120%] group-hover/btn:opacity-60" />
+
       <motion.span
-        className="pointer-events-none absolute inset-0 -z-10 bg-radial-gradient"
+        className="pointer-events-none absolute inset-0 -z-10 rounded-full bg-[radial-gradient(circle_at_center,rgba(34,211,238,0.45),transparent_60%)]"
         animate={{
           opacity: hover ? 1 : 0,
           scale: hover ? 1.4 : 0.4,
@@ -56,4 +60,3 @@ export default function MagneticButton({
     </motion.button>
   );
 }
-
